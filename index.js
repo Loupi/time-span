@@ -1,6 +1,6 @@
-import convertHrtime from 'convert-hrtime';
+const convertHrtime = require('convert-hrtime-cjs');
 
-export default function timeSpan() {
+function timeSpan() {
 	const start = process.hrtime.bigint();
 	const end = type => convertHrtime(process.hrtime.bigint() - start)[type];
 
@@ -11,3 +11,5 @@ export default function timeSpan() {
 
 	return returnValue;
 }
+
+module.exports = timeSpan;

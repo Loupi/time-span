@@ -1,7 +1,7 @@
-import test from 'ava';
-import delay from 'delay';
-import inRange from 'in-range';
-import timeSpan from './index.js';
+const test = require('ava');
+const delay = require('delay');
+const inRange = require('in-range-cjs');
+const timeSpan = require('./index.js');
 
 test('main', async t => {
 	const end = timeSpan();
